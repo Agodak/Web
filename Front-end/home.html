@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+	body {text-align: center;}
+	.footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		/* Set the fixed height of the footer here */
+		height: 60px;
+		line-height: 60px; /* Vertically center the text there */
+		background-color: #f5f5f5;
+	}
+	</style>
+	<title>HomePage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="Login.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: ivory">
+
+<div class="container">
+	<h1>HomePage</h1>
+	<p>Welcome!</p>
+</div>
+
+<div class="container">
+	<a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+</div>
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+	<div class="modal-dialog">
+		<div class="loginmodal-container">
+			<h1>Login to Your Account</h1><br>
+			<form id="LoginForm" action="http://localhost:8080/user/login">
+				<input type="text" name="user" placeholder="Username" required>
+				<input type="password" name="pass" placeholder="Password" required>
+				<input id="Login" type="submit" name="login" class="login loginmodal-submit" value="Login">
+			</form>	
+			<div class="login-help">
+				<a href="Registration.html">Register</a> - <a href="Password.html">Forgot Password</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		<a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+		<li class="active"><a href="#">Home</a></li>
+		<li><a href="#">Page 1</a></li>
+		<li><a href="#">Page 2</a></li>
+		<li><a href="#">Page 3</a></li>
+    </ul>
+	</div>
+</nav>
+
+<div class="row" style="font-size: 40px">
+	<div class="col-md-12">Text</div>
+</div>
+<div class="row">
+	<div class="col-md-4">More Text</div>
+	<div class="col-md-4">Texty McTextFace</div>
+	<div class="col-md-4">
+		<img src="https://ichef.bbci.co.uk/news/660/cpsprodpb/103ED/production/_89614566_img_3227.jpg" alt="Psych! An image">
+	</div>
+</div>
+	
+<div class="row">
+	...
+</div>
+
+<footer class="footer">
+      <div class="container">
+        <span class="text-muted">A piece of text, such as a page number or a title, that appears at the bottom of every page of a document or book</span>
+      </div>
+</footer>
+	
+</body>
+</html> 
